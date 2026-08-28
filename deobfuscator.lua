@@ -1,3 +1,5 @@
+--HELPIMINCAVE ALSO VIBECODED THIS WHOLE THING BOO THEM BOO BOOO BOOO BOO
+
 local Deobfuscator = {}
 
 local function readCode(payload, position)
