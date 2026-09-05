@@ -1,5 +1,6 @@
 --i made this because i was bored
 --and because infinite yield sucks
+
 local date = os.date("*t")
 if getgenv().bootlegiyloaded == true then
     error("BOOTLEG IY ALREADY LOADED, PLEASE DETACH", 0)
@@ -55,6 +56,12 @@ cloneref = missing("function", cloneref, function(...) return ... end)
 getgenv = missing("function", getgenv, function(...) return ... end)
 gethui = missing("function", gethui, function(...) return ... end)
 
+if typeof(identifyexecutor) == "function" then
+    local executorName = string.lower(tostring(identifyexecutor()))
+    
+    if string.find(executorName, "xeno") and getgenv().funny ~= false or getgenv().funny == nil then
+    end
+end
 local char = game.Players.LocalPlayer.Character
 
 local UserInputService = cloneref(game:GetService("UserInputService"))
